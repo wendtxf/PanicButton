@@ -21,7 +21,7 @@ int main(){
     scanf("%s",&opc);
 
     if (opc == 'p' || opc == 'P'){
-        system("shred *.* -f -u -v -n 5");
+        system("shred *.* -fuvn 5");
     }else if (opc == 'c' || opc == 'C'){
         printf("\nOperação cancelada pelo usuário!\n");
     }else if (opc == 'l' || opc == 'L'){
@@ -30,7 +30,7 @@ int main(){
         scanf("%s",&opc);
 
         if (opc == 'y' || opc == 'Y'){
-            system("shred *.* -f -u -v -n 5");
+            system("shred *.* -fuvn 5");
         }else if (opc == 'n' || opc == 'N'){
             printf("\nOperação cancelada pelo usuário!\n");
         }else{
